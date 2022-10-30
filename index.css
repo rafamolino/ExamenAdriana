@@ -1,0 +1,29 @@
+
+  
+  
+  
+  
+  .App-content {
+    padding-top: 2%;
+    background-color: #b7bfd1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+  
+  }
+  
+  .ejercicio1{
+    color: black;
+    margin-bottom: 5%;
+  
+  }
+  h3{
+    color: black;
+    border-style:dotted;
+    border-radius: 5px;
+  }
+  

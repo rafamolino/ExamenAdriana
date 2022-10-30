@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Examen</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <meta name="viewport" content="width=device-width , initial-scale=1 ,shrink-to-fit=no">
+</head>
+
+<body>
+    <div class="App-content">
+
+        <section className="App-content">
+            <div class="primero">
+                <h3>ONOMATOPOEIAS</h3>
+
+                <div class="ejercicio1">
+
+                    <script>
+                        const lista = [["Bang", " loud explosive noise like a door, gun; ien"], ["Boom", "loud sound with much resonance- ien; loud explosive noise of a thunder, waves, explosion- ien; period of sudden economic growth- dia"],
+                        ["Clip-clop", "sound of alternating rhyme- ien; sound of horses’ hooves- ien"], ["Thump", "sound made when hitting sth- ien"], ["Gulp", "sound made when swallowing-ien"], ["Hiccough", "sound produced by the throat --ien"],
+                        ["Bleat", "name of the sound that sheep make- dia; to complain in an annoying way-dia"], ["Bray", " name of the sound donkeys do- dia; unpleasant noise- dia"]
+                            , ["Buzz ", "sound made by bees- ien; sound made by phone- ien; to be happy-dia"], ["Cackle", "name of the sound chicken do-dia"],
+                        ["Cock-a-doodle-do", "sound made by a rooster-ien"], ["Cluck", "sound made by a chicken- ien"], ["Croak", "sound made by a frog- ien"],
+                        ["Caw", "sound made by a crow- ien"], ["Chirp", "sound made by small birds and insects-ien; sound made by phone-ien"],
+                        ["Coo", "sound made by doves & pigeons-ien"],
+                        ["Moo", "sound made by a cow-ien"], ["Miaow", "sound made by a cat-ien"],
+                        ["Honk", "sound made by a goose-ien; sound made by claxon-ien"], ["Snort",
+                            "sound produced when forcing air through the nose (typically horses)-ien"],
+                        ["Quack", "sound made by ducks-ien"], ["Clank", "sound made by metal pieces hitting together-ien"],
+                        ["Crackle", "sound made by fireplace, radio-ien"], ["Ding-dong", "sound made by a bell-ien"],
+                        ["Rustle", "sound of moving something fast-dia"], ["Whir", "sound made by wheel when turning quickly- ien"],
+                        ["Whistle", "sound produced when forcing air through your lips-ien"], ["Crack", "sound produced when breaking sth-ien"],
+                        ["Fizzle", "sound made by fireworks-ien"], ["Sizzle", "sound produced when cooking food-ien"]]
+                        let ejer1 = [...lista].sort(() => (Math.random() > 0.5 ? 1 : -1)).slice(0, 3)
+                        let palabra1 = ejer1[0][0]
+                        let mensaje = ejer1[0][1]
+                        let palabra2 = ejer1[1][0]
+                        let mensaje2 = ejer1[1][1]
+                        let palabra3 = ejer1[2][0]
+                        let mensaje3 = ejer1[2][1]
+                    </script>
+
+                    <p id="onom1"></p>
+                    <input text style="font-size: small;" size="70"></input><button
+                        onclick='swal(palabra1,mensaje,"info")'>Ver</button>
+
+                    <p id="onom2"></p>
+                    <input text style="font-size: small;" size="70"></input><button
+                        onclick='swal(palabra2,mensaje2,"info")'>Ver</button>
+
+                    <p id="onom3"></p>
+                    <input text style="font-size: small;" size="70"></input><button
+                        onclick='swal(palabra3,mensaje3,"info")'>Ver</button>
+
+                </div>
+                <script>
+
+
+
+
+
+                    document.getElementById("onom1").innerHTML = palabra1
+                    document.getElementById("onom2").innerHTML = palabra2
+                    document.getElementById("onom3").innerHTML = palabra3
+
+                </script>
+
+
+            </div>
+            <div class="segundo">
+                <h3>CONNOTATION</h3>
+
+                <div class="ejercicio1">
+
+                    <script>
+                        const lista2 = [["Afro-American", "a person whose ancestors were born in Africa; neutral or positive connotation if we compare it to the word nigga"], ["Broad", "term used by men for referring to women; not fully negative but sexist connotation"],
+                        ["Birdie", " a beautiful young woman; affective overtone, term of endearment"], ["Chick", "a term used by men for referring to women; not fully negative"], ["Blimey", "expression of surprise; stylistic condition of usage: slang and informa"], ["Chairperson", "person in charge of a meeting; neutral evaluation but if we think about the fact that there was a “chair-woman/man”, we can think it is positive"],
+                        ["Crumpet", " a woman that is sexually attractive; negative connotation"], ["Darn", " a subtle way of saying “damn”; informal, slang"]
+                            , ["Daddy", "childish way of saying dad; term of endearment, affective overtone"], ["Doggy", "childish way of saying dog; term of endearment, affective overtone"],
+                        ["Dude", "someone from the city that dress in a stylish way; slang and informal"], ["Dego", "from “diego” a term used for Americans and Australians for referring to people from other countries; negative connotation, social attitudes towards countries"], ["Freedom", "the ability and right to do/say what you want; cultural image, positive connotation compared with slavery"],
+                        ["Frog", " the way french people talk; negative connotation"], ["Haughty", "someone who thinks he/she is the best; negative connotation, proud in a bad way"],
+                        ["Homemaker", " someone who takes care of the house; neutral connotation"],
+                        ["Jerk", "an stupid person; negative connotation (the denotation and the connotation are the same)"], ["Kraut", "someone from Germany; negative connotation"],
+                        ["Loch", "scottish way of saying “lake”; cultural images"], ["Nerd",
+                            "someone who doesn’t talk with people and he is considered a looser; negative connotation"],
+                        ["Non-conformist", "someone who doesn’t follow the rules established; neutral connotation (it depends of the place)"], ["Pakki", "someone from Pakistan; negative connotation"],
+                        ["Pet", "an animal you keep at home as a companion; term of endearment, affective overtone, the way couples call each other"], ["Pig", "police officer; negative connotation"],
+                        ["Sex worker", "someone whose job consist on giving sexual services; positive connotation compared with “prostitute”"], ["Spic", "a way of referring to people from Spanish speaking countries; negative connotation"],
+                        ["Slay", " a way of saying someone is doing great; slang, informal"], ["Politician", "someone who is very manipulative; negative connotation"]]
+                        let ejer2 = [...lista2].sort(() => (Math.random() > 0.5 ? 1 : -1)).slice(0, 3)
+                        let palabra1_2 = ejer2[0][0]
+                        let mensaje_2 = ejer2[0][1]
+                        let palabra2_2 = ejer2[1][0]
+                        let mensaje2_2 = ejer2[1][1]
+                        let palabra3_2 = ejer2[2][0]
+                        let mensaje3_2 = ejer2[2][1]
+                    </script>
+                    <p id="con1"></p>
+                    <input text style="font-size: small;" size="70"></input><button
+                        onclick='swal(palabra1_2,mensaje_2,"info")'>Ver</button>
+
+                    <p id="con2"></p>
+                    <input text style="font-size: small;" size="70"></input><button
+                        onclick='swal(palabra2_2,mensaje2_2,"info")'>Ver</button>
+
+                    <p id="con3"></p>
+                    <input text style="font-size: small;" size="70"></input><button
+                        onclick='swal(palabra3_2,mensaje3_2,"info")'>Ver</button>
+                    <script>
+
+                        document.getElementById("con1").innerHTML = palabra1_2
+                        document.getElementById("con2").innerHTML = palabra2_2
+                        document.getElementById("con3").innerHTML = palabra3_2
+
+                    </script>
+                </div>
+
+            </div>
+            <div class="tercero">
+                <h3>WORD-CREATION</h3>
+
+                <div class="ejercicio1">
+
+                    <script>
+                        const lista3 = [["Atlas", "a book that contains maps; from Greek Atlas, a Titan"], ["August", "a month of the year; from Latin, Augustus, a Roman Emperor"],
+                        ["Aphrodisiac", "a drug or food that cause sexual desire; from the Greek godess of love and sexual desire, Aphrodite"], ["Alzheimer", "a disease that causes the loss of memory, like a type of dementia; from Alois Alzheimer, the one who discovered the disease"], ["Bikini", "a type of cloth that women wear in summer; an island were people did nuclear testing- the impact of an explosion is compared to the impact of men when seeing women in bikini"], ["Boycott", " a refusal to buy goods or participate in an event; from the Irish Captain Boycott"],
+                        ["Coke", "trademark of fizzy drinks; from coca leaves and cola nuts"], ["Googol", "a mathematical term n100; it comes from a 9-year-old boy, the nephew of the man who discovered the number"]
+                            , ["Gobbledygook", "sound that turkeys make, also baby talk, nonsense talking; it was 1st used by a journalist for referring to politicians’ speech, which was nonsense"], 
+                            ["Google", "a program for finding information on the internet; it comes from Googol"],
+                        ["Guillotine", "a machine that was used for cutting people’s head; from the inventor Joseph-Ignace Guillotine"], ["Jeans", "a type of cloth, like trousers; from the place where they were created, Genoa, in Italy"],
+                         ["Lynch", "to kill someone who is guilty of a crime; from the Lynch law, and its creator, William Lynch"],
+                        ["Procrustean", " a system to enforce uniformity; it comes from a man who used a bed as a way of measure: if people were too tall he adjusted them so that they could fit in the bed; if they were to short, he stretched their articulations"]
+                        , ["Platonic", "something that is very difficult to happen, like an utopian dream; from Latin Plato"],
+                        ["Quark", "atomic particles of the universe; from James Joyce, who wanted a word that could rhyme and he chose that one"],
+                        ["Sandwich", "a meal that is composed by 2 slices of bread with usually ham and cheese; it comes from the Earl of Sandwich, who was an addict to cards and he made this meal so that he could continue playing"],
+                         ["Samovar", "Grecian tea urn; it comes from Russian “self-boiler”"],
+                        ["Sherry", "a type of wine; it comes from the place where is was originated, Jerez from Spain"], ["Vaseline",
+                            "a product of skin care; it comes from German “wasser” (water) + Greek “ine”"],
+                        ["T-shirt", "a piece of cloth that usually has short sleeves; it comes from the letter T because of their close resemblance"], 
+                        ["Jaywalk", "a way of walking that birds have/ crossing the street carelessly; it comes from the fact that in the past, horses’ carriages were dorve from the wrong side of the street and it was dangerous."]]
+                        let ejer3 = [...lista3].sort(() => (Math.random() > 0.5 ? 1 : -1)).slice(0, 3)
+                        let palabra1_3 = ejer3[0][0]
+                        let mensaje_3 = ejer3[0][1]
+                        let palabra2_3 = ejer3[1][0]
+                        let mensaje2_3 = ejer3[1][1]
+                        let palabra3_3 = ejer3[2][0]
+                        let mensaje3_3 = ejer3[2][1]
+                    </script>
+                    <p id="wc1"></p>
+                    <input text style="font-size: small;" size="70"></input><button
+                        onclick='swal(palabra1_3,mensaje_3,"info")'>Ver</button>
+
+                    <p id="wc2"></p>
+                    <input text style="font-size: small;" size="70"></input><button
+                        onclick='swal(palabra2_3,mensaje2_3,"info")'>Ver</button>
+
+                    <p id="wc3"></p>
+                    <input text style="font-size: small;" size="70"></input><button
+                        onclick='swal(palabra3_3,mensaje3_3,"info")'>Ver</button>
+                    <script>
+
+                        document.getElementById("wc1").innerHTML = palabra1_3
+                        document.getElementById("wc2").innerHTML = palabra2_3
+                        document.getElementById("wc3").innerHTML = palabra3_3
+
+                    </script>
+
+                </div>
+
+            </div>
+
+            <div class="cuarto">
+                <h3> WORD-BORROWING</h3>
+
+                <div class="ejercicio1">
+
+                    <p></p>
+                    <input text style="font-size: small;" size="70"></input>
+
+                    <p></p>
+                    <input text style="font-size: small;" size="70"></input>
+
+                    <p></p>
+                    <input text style="font-size: small;" size="70"></input>
+
+                </div>
+
+            </div>
+
+            <div class="quinto">
+                <h3> POLYSEMY</h3>
+
+                <div class="ejercicio1">
+
+                    <p></p>
+                    <input text style="font-size: small;" size="70"></input>
+
+                    <p></p>
+                    <input text style="font-size: small;" size="70"></input>
+
+                    <p></p>
+                    <input text style="font-size: small;" size="70"></input>
+
+                </div>
+
+            </div>
+
+            <div class="sexto">
+                <h3> HOMONYMY</h3>
+
+                <div class="ejercicio1">
+
+                    <p></p>
+                    <input text style="font-size: small;" size="70"></input>
+
+                    <p></p>
+                    <input text style="font-size: small;" size="70"></input>
+
+                    <p></p>
+                    <input text style="font-size: small;" size="70"></input>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
